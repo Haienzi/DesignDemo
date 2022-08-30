@@ -205,6 +205,13 @@
 			path = TableViewAdapter;
 			sourceTree = "<group>";
 		};
+		3725965F28BDFCF500CCD0A4 /* 8_Bridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 8_Bridge;
+			sourceTree = "<group>";
+		};
 		373E179628ABB9D200A79CAD /* 6_Proxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +296,7 @@
 				3706966228A0F7590021E482 /* 5_Observer */,
 				373E179628ABB9D200A79CAD /* 6_Proxy */,
 				3725964B28B5018300CCD0A4 /* 7_Adapter */,
+				3725965F28BDFCF500CCD0A4 /* 8_Bridge */,
 				37897F35288FE6FA00D2481D /* Utils */,
 				37897EE5288E6DCD00D2481D /* AppDelegate.swift */,
 				37897EE7288E6DCD00D2481D /* SceneDelegate.swift */,

@@ -15,6 +15,10 @@
 		3706966828A241270021E482 /* Boy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706966728A241270021E482 /* Boy.swift */; };
 		3710C3FD289BC11D005520CE /* TestBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710C3FC289BC11D005520CE /* TestBuilderViewController.m */; };
 		3710C401289CCA67005520CE /* SingletonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710C400289CCA67005520CE /* SingletonTest.m */; };
+		3725965328B85BF100CCD0A4 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725965228B85BF100CCD0A4 /* Target.swift */; };
+		3725965528B85C0700CCD0A4 /* USDAdaptee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725965428B85C0700CCD0A4 /* USDAdaptee.swift */; };
+		3725965728B85C1B00CCD0A4 /* CNYAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725965628B85C1B00CCD0A4 /* CNYAdapter.swift */; };
+		3725965A28B86F2B00CCD0A4 /* TableViewPtotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725965928B86F2B00CCD0A4 /* TableViewPtotocol.swift */; };
 		373E179A28ACC11200A79CAD /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E179928ACC11200A79CAD /* AViewController.swift */; };
 		373E179C28ACC1D000A79CAD /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E179B28ACC1D000A79CAD /* TableViewDelegate.swift */; };
 		373E179E28ACD53000A79CAD /* SubjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E179D28ACD53000A79CAD /* SubjectProtocol.swift */; };
@@ -73,6 +77,10 @@
 		3710C3FC289BC11D005520CE /* TestBuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBuilderViewController.m; sourceTree = "<group>"; };
 		3710C3FF289CCA67005520CE /* SingletonTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonTest.h; sourceTree = "<group>"; };
 		3710C400289CCA67005520CE /* SingletonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonTest.m; sourceTree = "<group>"; };
+		3725965228B85BF100CCD0A4 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		3725965428B85C0700CCD0A4 /* USDAdaptee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDAdaptee.swift; sourceTree = "<group>"; };
+		3725965628B85C1B00CCD0A4 /* CNYAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNYAdapter.swift; sourceTree = "<group>"; };
+		3725965928B86F2B00CCD0A4 /* TableViewPtotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPtotocol.swift; sourceTree = "<group>"; };
 		373E179928ACC11200A79CAD /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		373E179B28ACC1D000A79CAD /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		373E179D28ACD53000A79CAD /* SubjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectProtocol.swift; sourceTree = "<group>"; };
@@ -170,6 +178,33 @@
 			path = 4_Single;
 			sourceTree = "<group>";
 		};
+		3725964B28B5018300CCD0A4 /* 7_Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				3725965828B85C5000CCD0A4 /* TableViewAdapter */,
+				3725965128B85BD200CCD0A4 /* example */,
+			);
+			path = 7_Adapter;
+			sourceTree = "<group>";
+		};
+		3725965128B85BD200CCD0A4 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				3725965228B85BF100CCD0A4 /* Target.swift */,
+				3725965428B85C0700CCD0A4 /* USDAdaptee.swift */,
+				3725965628B85C1B00CCD0A4 /* CNYAdapter.swift */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		3725965828B85C5000CCD0A4 /* TableViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				3725965928B86F2B00CCD0A4 /* TableViewPtotocol.swift */,
+			);
+			path = TableViewAdapter;
+			sourceTree = "<group>";
+		};
 		373E179628ABB9D200A79CAD /* 6_Proxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +288,7 @@
 				3710C3FE289CCA1F005520CE /* 4_Single */,
 				3706966228A0F7590021E482 /* 5_Observer */,
 				373E179628ABB9D200A79CAD /* 6_Proxy */,
+				3725964B28B5018300CCD0A4 /* 7_Adapter */,
 				37897F35288FE6FA00D2481D /* Utils */,
 				37897EE5288E6DCD00D2481D /* AppDelegate.swift */,
 				37897EE7288E6DCD00D2481D /* SceneDelegate.swift */,
@@ -525,16 +561,19 @@
 				376EC27F28A3D6A8004972CD /* ArrayContains.swift in Sources */,
 				376EC27228A35B42004972CD /* ObserverB.swift in Sources */,
 				37E1A2A82892AF6D00A2C887 /* MainViewFactoryB.swift in Sources */,
+				3725965728B85C1B00CCD0A4 /* CNYAdapter.swift in Sources */,
 				376EC27728A3B923004972CD /* MyNotificationCenter.swift in Sources */,
 				37E1A2D12899084E00A2C887 /* PopupViewBuilder.m in Sources */,
 				37897F26288E86AE00D2481D /* CellSingleton.swift in Sources */,
 				37897F2C288FBD5D00D2481D /* MainPageCell.swift in Sources */,
 				37897F20288E79B600D2481D /* MainPageCellFactory.swift in Sources */,
+				3725965A28B86F2B00CCD0A4 /* TableViewPtotocol.swift in Sources */,
 				376EC27B28A3B94D004972CD /* MySubject.swift in Sources */,
 				37897EEA288E6DCD00D2481D /* ViewController.swift in Sources */,
 				3710C3FD289BC11D005520CE /* TestBuilderViewController.m in Sources */,
 				373E17AF28AE153000A79CAD /* ATestViewController.m in Sources */,
 				37897F2E288FC2C200D2481D /* MainPageJobCell.swift in Sources */,
+				3725965328B85BF100CCD0A4 /* Target.swift in Sources */,
 				37E1A2B32892C02300A2C887 /* TopLoginView.swift in Sources */,
 				373E17A028ACDA4400A79CAD /* RealSubject.swift in Sources */,
 				3706966428A240F50021E482 /* Person.swift in Sources */,
@@ -549,6 +588,7 @@
 				3706966828A241270021E482 /* Boy.swift in Sources */,
 				37E1A2A42892AF4500A2C887 /* ViewAbstractFactory.swift in Sources */,
 				37E1A2CE2899075400A2C887 /* MyPopupView.m in Sources */,
+				3725965528B85C0700CCD0A4 /* USDAdaptee.swift in Sources */,
 				37897F30288FC2E400D2481D /* MainPageCarCell.swift in Sources */,
 				37E1A2B52892C03300A2C887 /* TopSearchView.swift in Sources */,
 				37897EE8288E6DCD00D2481D /* SceneDelegate.swift in Sources */,

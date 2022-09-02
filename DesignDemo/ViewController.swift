@@ -60,6 +60,8 @@ class ViewController: UIViewController {
          MyNotificationCenter.singleton.addMyObserver(aObserver: self, aSelector: #selector(testObserverA), notificationName:notificationObserver , subjectName: subjectName)
         MyNotificationCenter.singleton.addMyObserver(aObserver: self, aSelector: #selector(testProperty), notificationName:notificationTest , subjectName: subjectName)
         NotificationCenter.default.addObserver(self, selector: #selector(testProperty), name: NSNotification.Name.init(rawValue: notificationObserver), object: nil)
+        //测试组合模式
+        self.testComposite()
     
     }
     
@@ -89,6 +91,38 @@ class ViewController: UIViewController {
         print(girl.name)
         let person = Person()
         print(person.name)
+    }
+    
+    func testBridge(){
+        
+    }
+    
+    func testComposite(){
+        let root = Composite.init(name: "root")
+        root.add(component: Leaf.init(name: "LeafA"))
+        root.add(component: Leaf.init(name: "LeafB"))
+        
+        let comA = Composite.init(name: "CompositeA")
+        comA.add(component: Leaf.init(name: "LeafAA"))
+        comA.add(component: Leaf.init(name: "LeafAB"))
+    
+        let comB = Composite.init(name: "CompositeAC")
+        comB.add(component: Leaf.init(name: "LeafACA"))
+        comB.add(component: Leaf.init(name: "LeafACB"))
+        comA.add(component: comB)
+        
+        root.add(component: comA)
+        root.display(depth: 0)
+        
+//        0 Level root
+//        1 Level LeafA
+//        1 Level LeafB
+//        1 Level CompositeA
+//        2 Level LeafAA
+//        2 Level LeafAB
+//        2 Level CompositeAC
+//        3 Level LeafACA
+//        3 Level LeafACB
     }
     
     override func viewDidDisappear(_ animated: Bool) {

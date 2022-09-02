@@ -60,8 +60,10 @@ class ViewController: UIViewController {
          MyNotificationCenter.singleton.addMyObserver(aObserver: self, aSelector: #selector(testObserverA), notificationName:notificationObserver , subjectName: subjectName)
         MyNotificationCenter.singleton.addMyObserver(aObserver: self, aSelector: #selector(testProperty), notificationName:notificationTest , subjectName: subjectName)
         NotificationCenter.default.addObserver(self, selector: #selector(testProperty), name: NSNotification.Name.init(rawValue: notificationObserver), object: nil)
+        //测试桥接模式
+        testBridge()
         //测试组合模式
-        self.testComposite()
+        testComposite()
     
     }
     
@@ -93,10 +95,16 @@ class ViewController: UIViewController {
         print(person.name)
     }
     
+    //测试桥接模式
     func testBridge(){
+        let wxPay = WxPay.init(payMode: PayFingerPrintMode.init())
+        wxPay.transfer(id: "007", tradeId: "1234566", amount: 10000)
         
+        let zfbPay = ZfbPay.init(payMode: PayCyper.init())
+        zfbPay.transfer(id: "077", tradeId: "1234567", amount: 1000)
     }
     
+    //测试组合模式
     func testComposite(){
         let root = Composite.init(name: "root")
         root.add(component: Leaf.init(name: "LeafA"))

@@ -37,6 +37,19 @@
 		373E17AF28AE153000A79CAD /* ATestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373E17AE28AE153000A79CAD /* ATestViewController.m */; };
 		373E17B228AE173900A79CAD /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 373E17B128AE173900A79CAD /* TestView.m */; };
 		373E17B528AE1EB200A79CAD /* BTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 373E17B428AE1EB200A79CAD /* BTestViewController.m */; };
+		3743355C28D352B200A9F380 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743355B28D352B200A9F380 /* Hero.swift */; };
+		3743355E28D353C200A9F380 /* Galen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743355D28D353C200A9F380 /* Galen.swift */; };
+		3743356028D353D600A9F380 /* Timo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743355F28D353D600A9F380 /* Timo.swift */; };
+		3743356228D355F600A9F380 /* BufferDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743356128D355F600A9F380 /* BufferDecorator.swift */; };
+		3743356428D3578400A9F380 /* RedBuffDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743356328D3578400A9F380 /* RedBuffDecorator.swift */; };
+		3743356628D3579500A9F380 /* BlueBuffDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743356528D3579500A9F380 /* BlueBuffDecorator.swift */; };
+		3743356828DAC15D00A9F380 /* ImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743356728DAC15D00A9F380 /* ImageEditor.swift */; };
+		3743356A28DAC3B900A9F380 /* ImageDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743356928DAC3B900A9F380 /* ImageDecorator.swift */; };
+		3743356C28DAE57000A9F380 /* UIImage+ImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743356B28DAE57000A9F380 /* UIImage+ImageEditor.swift */; };
+		3743356E28DAF4BA00A9F380 /* BaseFilterDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743356D28DAF4BA00A9F380 /* BaseFilterDecorator.swift */; };
+		3743357428DAFA9D00A9F380 /* ResizerDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743357328DAFA9D00A9F380 /* ResizerDecorator.swift */; };
+		3743357628DAFBF300A9F380 /* BlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743357528DAFBF300A9F380 /* BlurFilter.swift */; };
+		3743357828DAFC0C00A9F380 /* ColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743357728DAFC0C00A9F380 /* ColorFilter.swift */; };
 		376EC26C28A35B0C004972CD /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376EC26B28A35B0C004972CD /* Observer.swift */; };
 		376EC26E28A35B25004972CD /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376EC26D28A35B25004972CD /* Subject.swift */; };
 		376EC27028A35B34004972CD /* ObserverA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376EC26F28A35B34004972CD /* ObserverA.swift */; };
@@ -71,6 +84,10 @@
 		37E1A2B92892C06200A2C887 /* MiddleCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1A2B82892C06200A2C887 /* MiddleCategoryView.swift */; };
 		37E1A2CE2899075400A2C887 /* MyPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1A2CD2899075400A2C887 /* MyPopupView.m */; };
 		37E1A2D12899084E00A2C887 /* PopupViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1A2D02899084E00A2C887 /* PopupViewBuilder.m */; };
+		37FE96F228DC38AF00D648E7 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F128DC38AF00D648E7 /* Component.swift */; };
+		37FE96F428DC3F0700D648E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F328DC3F0700D648E7 /* Theme.swift */; };
+		37FE96F628DC463E00D648E7 /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F528DC463E00D648E7 /* ButtonTheme.swift */; };
+		37FE96FA28DC467100D648E7 /* LabelTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F928DC467100D648E7 /* LabelTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +129,19 @@
 		373E17B128AE173900A79CAD /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		373E17B328AE1EB200A79CAD /* BTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTestViewController.h; sourceTree = "<group>"; };
 		373E17B428AE1EB200A79CAD /* BTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTestViewController.m; sourceTree = "<group>"; };
+		3743355B28D352B200A9F380 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		3743355D28D353C200A9F380 /* Galen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galen.swift; sourceTree = "<group>"; };
+		3743355F28D353D600A9F380 /* Timo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timo.swift; sourceTree = "<group>"; };
+		3743356128D355F600A9F380 /* BufferDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferDecorator.swift; sourceTree = "<group>"; };
+		3743356328D3578400A9F380 /* RedBuffDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBuffDecorator.swift; sourceTree = "<group>"; };
+		3743356528D3579500A9F380 /* BlueBuffDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBuffDecorator.swift; sourceTree = "<group>"; };
+		3743356728DAC15D00A9F380 /* ImageEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditor.swift; sourceTree = "<group>"; };
+		3743356928DAC3B900A9F380 /* ImageDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDecorator.swift; sourceTree = "<group>"; };
+		3743356B28DAE57000A9F380 /* UIImage+ImageEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageEditor.swift"; sourceTree = "<group>"; };
+		3743356D28DAF4BA00A9F380 /* BaseFilterDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFilterDecorator.swift; sourceTree = "<group>"; };
+		3743357328DAFA9D00A9F380 /* ResizerDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizerDecorator.swift; sourceTree = "<group>"; };
+		3743357528DAFBF300A9F380 /* BlurFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurFilter.swift; sourceTree = "<group>"; };
+		3743357728DAFC0C00A9F380 /* ColorFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFilter.swift; sourceTree = "<group>"; };
 		376EC26B28A35B0C004972CD /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		376EC26D28A35B25004972CD /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		376EC26F28A35B34004972CD /* ObserverA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverA.swift; sourceTree = "<group>"; };
@@ -151,6 +181,10 @@
 		37E1A2CD2899075400A2C887 /* MyPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPopupView.m; sourceTree = "<group>"; };
 		37E1A2CF2899084E00A2C887 /* PopupViewBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopupViewBuilder.h; sourceTree = "<group>"; };
 		37E1A2D02899084E00A2C887 /* PopupViewBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupViewBuilder.m; sourceTree = "<group>"; };
+		37FE96F128DC38AF00D648E7 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		37FE96F328DC3F0700D648E7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		37FE96F528DC463E00D648E7 /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
+		37FE96F928DC467100D648E7 /* LabelTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTheme.swift; sourceTree = "<group>"; };
 		9E4B54E99B49054058D4185D /* Pods-DesignDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignDemo.debug.xcconfig"; path = "Target Support Files/Pods-DesignDemo/Pods-DesignDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FBACEEF676B92AA0FBA83E33 /* Pods-DesignDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignDemo.release.xcconfig"; path = "Target Support Files/Pods-DesignDemo/Pods-DesignDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,9 +281,11 @@
 		3725967928C1A3D500CCD0A4 /* 9_Composite */ = {
 			isa = PBXGroup;
 			children = (
-				3725967A28C1A62A00CCD0A4 /* Components.swift */,
-				3725967C28C1AA3800CCD0A4 /* Leaf.swift */,
-				3725967E28C1AA4D00CCD0A4 /* Composite.swift */,
+				37FE96F028DC12DD00D648E7 /* example */,
+				37FE96F128DC38AF00D648E7 /* Component.swift */,
+				37FE96F328DC3F0700D648E7 /* Theme.swift */,
+				37FE96F528DC463E00D648E7 /* ButtonTheme.swift */,
+				37FE96F928DC467100D648E7 /* LabelTheme.swift */,
 			);
 			path = 9_Composite;
 			sourceTree = "<group>";
@@ -288,6 +324,34 @@
 				373E17AB28AD1AA000A79CAD /* DelegateManager.m */,
 			);
 			path = MultiProxyOC;
+			sourceTree = "<group>";
+		};
+		3743355928D33CC000A9F380 /* 10_Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				3743355A28D3528D00A9F380 /* example */,
+				3743356728DAC15D00A9F380 /* ImageEditor.swift */,
+				3743356B28DAE57000A9F380 /* UIImage+ImageEditor.swift */,
+				3743356928DAC3B900A9F380 /* ImageDecorator.swift */,
+				3743356D28DAF4BA00A9F380 /* BaseFilterDecorator.swift */,
+				3743357528DAFBF300A9F380 /* BlurFilter.swift */,
+				3743357728DAFC0C00A9F380 /* ColorFilter.swift */,
+				3743357328DAFA9D00A9F380 /* ResizerDecorator.swift */,
+			);
+			path = 10_Decorator;
+			sourceTree = "<group>";
+		};
+		3743355A28D3528D00A9F380 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				3743355B28D352B200A9F380 /* Hero.swift */,
+				3743355D28D353C200A9F380 /* Galen.swift */,
+				3743355F28D353D600A9F380 /* Timo.swift */,
+				3743356128D355F600A9F380 /* BufferDecorator.swift */,
+				3743356328D3578400A9F380 /* RedBuffDecorator.swift */,
+				3743356528D3579500A9F380 /* BlueBuffDecorator.swift */,
+			);
+			path = example;
 			sourceTree = "<group>";
 		};
 		376EC27328A38682004972CD /* example */ = {
@@ -341,6 +405,7 @@
 				3725964B28B5018300CCD0A4 /* 7_Adapter */,
 				3725965F28BDFCF500CCD0A4 /* 8_Bridge */,
 				3725967928C1A3D500CCD0A4 /* 9_Composite */,
+				3743355928D33CC000A9F380 /* 10_Decorator */,
 				37897EE5288E6DCD00D2481D /* AppDelegate.swift */,
 				37897EE7288E6DCD00D2481D /* SceneDelegate.swift */,
 				37897EE9288E6DCD00D2481D /* ViewController.swift */,
@@ -465,6 +530,16 @@
 				3706966028A0EA040021E482 /* UIView+PopupViewMaker.m */,
 			);
 			path = 3_Builder;
+			sourceTree = "<group>";
+		};
+		37FE96F028DC12DD00D648E7 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				3725967A28C1A62A00CCD0A4 /* Components.swift */,
+				3725967C28C1AA3800CCD0A4 /* Leaf.swift */,
+				3725967E28C1AA4D00CCD0A4 /* Composite.swift */,
+			);
+			path = example;
 			sourceTree = "<group>";
 		};
 		E39B63C7BCC8E1C72149C330 /* Pods */ = {
@@ -595,12 +670,16 @@
 				373E179C28ACC1D000A79CAD /* TableViewDelegate.swift in Sources */,
 				3706966628A241180021E482 /* Girl.swift in Sources */,
 				376EC27528A3ABC5004972CD /* MyNotification.swift in Sources */,
+				3743356828DAC15D00A9F380 /* ImageEditor.swift in Sources */,
+				3743356C28DAE57000A9F380 /* UIImage+ImageEditor.swift in Sources */,
+				3743355C28D352B200A9F380 /* Hero.swift in Sources */,
 				376EC27028A35B34004972CD /* ObserverA.swift in Sources */,
 				376EC26C28A35B0C004972CD /* Observer.swift in Sources */,
 				37E1A2B72892C05100A2C887 /* MiddleWalletView.swift in Sources */,
 				3706966128A0EA040021E482 /* UIView+PopupViewMaker.m in Sources */,
 				37897F37288FEA4800D2481D /* String+Class.swift in Sources */,
 				37E1A2B92892C06200A2C887 /* MiddleCategoryView.swift in Sources */,
+				37FE96F428DC3F0700D648E7 /* Theme.swift in Sources */,
 				3710C401289CCA67005520CE /* SingletonTest.m in Sources */,
 				37E1A2AC2892AFC800A2C887 /* MiddleViewProtocol.swift in Sources */,
 				3725966A28BF821D00CCD0A4 /* PayCypher.swift in Sources */,
@@ -608,8 +687,10 @@
 				373E179A28ACC11200A79CAD /* AViewController.swift in Sources */,
 				37E1A29C28912FBA00A2C887 /* MainViewController.swift in Sources */,
 				3706965E28A0BDB90021E482 /* PopupViewMaker.m in Sources */,
+				3743356428D3578400A9F380 /* RedBuffDecorator.swift in Sources */,
 				37E1A2A62892AF5B00A2C887 /* MainViewFactoryA.swift in Sources */,
 				373E17B528AE1EB200A79CAD /* BTestViewController.m in Sources */,
+				3743355E28D353C200A9F380 /* Galen.swift in Sources */,
 				3725966E28BF824100CCD0A4 /* PayFingerprintMode.swift in Sources */,
 				3725967D28C1AA3800CCD0A4 /* Leaf.swift in Sources */,
 				376EC27F28A3D6A8004972CD /* ArrayContains.swift in Sources */,
@@ -617,14 +698,18 @@
 				37E1A2A82892AF6D00A2C887 /* MainViewFactoryB.swift in Sources */,
 				3725965728B85C1B00CCD0A4 /* CNYAdapter.swift in Sources */,
 				376EC27728A3B923004972CD /* MyNotificationCenter.swift in Sources */,
+				3743356A28DAC3B900A9F380 /* ImageDecorator.swift in Sources */,
 				3725967F28C1AA4D00CCD0A4 /* Composite.swift in Sources */,
 				37E1A2D12899084E00A2C887 /* PopupViewBuilder.m in Sources */,
+				37FE96F228DC38AF00D648E7 /* Component.swift in Sources */,
 				3725966828BF81F400CCD0A4 /* ZfbPay.swift in Sources */,
 				37897F26288E86AE00D2481D /* CellSingleton.swift in Sources */,
 				37897F2C288FBD5D00D2481D /* MainPageCell.swift in Sources */,
 				37897F20288E79B600D2481D /* MainPageCellFactory.swift in Sources */,
 				376EC27B28A3B94D004972CD /* MySubject.swift in Sources */,
 				37897EEA288E6DCD00D2481D /* ViewController.swift in Sources */,
+				3743356628D3579500A9F380 /* BlueBuffDecorator.swift in Sources */,
+				37FE96FA28DC467100D648E7 /* LabelTheme.swift in Sources */,
 				3725967028BF836A00CCD0A4 /* PayModeProtocol.swift in Sources */,
 				3710C3FD289BC11D005520CE /* TestBuilderViewController.m in Sources */,
 				373E17AF28AE153000A79CAD /* ATestViewController.m in Sources */,
@@ -632,8 +717,10 @@
 				3725966628BF81E200CCD0A4 /* WxPay.swift in Sources */,
 				3725965328B85BF100CCD0A4 /* Target.swift in Sources */,
 				37E1A2B32892C02300A2C887 /* TopLoginView.swift in Sources */,
+				3743356028D353D600A9F380 /* Timo.swift in Sources */,
 				373E17A028ACDA4400A79CAD /* RealSubject.swift in Sources */,
 				3706966428A240F50021E482 /* Person.swift in Sources */,
+				3743356228D355F600A9F380 /* BufferDecorator.swift in Sources */,
 				3725966C28BF822B00CCD0A4 /* PayFaceMode.swift in Sources */,
 				37897F34288FD67200D2481D /* MainPageCellModel.swift in Sources */,
 				3725966428BF81CD00CCD0A4 /* Pay.swift in Sources */,
@@ -642,15 +729,20 @@
 				37E1A2AA2892AFB200A2C887 /* TopViewProtocol.swift in Sources */,
 				373E17AC28AD1AA000A79CAD /* DelegateManager.m in Sources */,
 				37897F32288FD4A600D2481D /* MainPageHouseCell.swift in Sources */,
+				3743357828DAFC0C00A9F380 /* ColorFilter.swift in Sources */,
 				376EC26E28A35B25004972CD /* Subject.swift in Sources */,
+				37FE96F628DC463E00D648E7 /* ButtonTheme.swift in Sources */,
 				37897EE6288E6DCD00D2481D /* AppDelegate.swift in Sources */,
 				373E17A228ACDA4F00A79CAD /* ProxyObject.swift in Sources */,
+				3743357628DAFBF300A9F380 /* BlurFilter.swift in Sources */,
+				3743357428DAFA9D00A9F380 /* ResizerDecorator.swift in Sources */,
 				3706966828A241270021E482 /* Boy.swift in Sources */,
 				37E1A2A42892AF4500A2C887 /* ViewAbstractFactory.swift in Sources */,
 				37E1A2CE2899075400A2C887 /* MyPopupView.m in Sources */,
 				3725965528B85C0700CCD0A4 /* USDAdaptee.swift in Sources */,
 				37897F30288FC2E400D2481D /* MainPageCarCell.swift in Sources */,
 				37E1A2B52892C03300A2C887 /* TopSearchView.swift in Sources */,
+				3743356E28DAF4BA00A9F380 /* BaseFilterDecorator.swift in Sources */,
 				37897EE8288E6DCD00D2481D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

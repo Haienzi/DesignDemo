@@ -36,10 +36,16 @@ class ViewController: UIViewController {
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         btn.setTitleColor(.black, for: .normal)
         btn.setTitleColor(.black, for: .selected)
-        btn.setTitle("发送创建弹窗的通知", for: .normal)
-        btn.setTitle("发送属性测试的通知", for: .selected)
+        btn.setTitle("主题测试", for: .normal)
+        btn.setTitle("测试", for: .selected)
         btn.addTarget(self, action:#selector(onBtnClick) , for: .touchUpInside)
         return btn
+    }()
+    
+    private lazy var label: UILabel = {
+        let label = UILabel(frame: CGRect.init(x: 100, y: 100, width: 200, height: 50))
+        label.text = "设计模式测试"
+        return label
     }()
     
     @objc func onBtnClick(sender: UIButton) {
@@ -57,16 +63,18 @@ class ViewController: UIViewController {
 //        redView.registerMapFlag1["test"] = false
 //        print(redView.registerMapFlag1["test"] ?? "test")
         view.addSubview(button)
+        view.addSubview(label)
          MyNotificationCenter.singleton.addMyObserver(aObserver: self, aSelector: #selector(testObserverA), notificationName:notificationObserver , subjectName: subjectName)
         MyNotificationCenter.singleton.addMyObserver(aObserver: self, aSelector: #selector(testProperty), notificationName:notificationTest , subjectName: subjectName)
         NotificationCenter.default.addObserver(self, selector: #selector(testProperty), name: NSNotification.Name.init(rawValue: notificationObserver), object: nil)
         //测试桥接模式
         testBridge()
         //测试组合模式
-        testComposite()
+        testCompositeReal()
+        //测试装饰器模式
+        //testDecorator()
     
     }
-    
     
     @objc func testObserverA(){
 //        let girl = Girl()
@@ -98,10 +106,10 @@ class ViewController: UIViewController {
     //测试桥接模式
     func testBridge(){
         let wxPay = WxPay.init(payMode: PayFingerPrintMode.init())
-        wxPay.transfer(id: "007", tradeId: "1234566", amount: 10000)
+        print(wxPay.transfer(id: "007", tradeId: "1234566", amount: 10000))
         
         let zfbPay = ZfbPay.init(payMode: PayCyper.init())
-        zfbPay.transfer(id: "077", tradeId: "1234567", amount: 1000)
+        print(zfbPay.transfer(id: "077", tradeId: "1234567", amount: 1000))
     }
     
     //测试组合模式
@@ -133,9 +141,79 @@ class ViewController: UIViewController {
 //        3 Level LeafACB
     }
     
+    //组合模式真实应用场景
+    func testCompositeReal(){
+        print("UIButton应用默认主题样式")
+        apply(theme: DefaultButtonTheme(), for:self.button)
+        print("UIButton应用暗夜主题样式")
+        apply(theme: NightButtonTheme(), for: UIButton())
+        
+        print("ViewController应用默认主题样式")
+        apply(theme: DefaultButtonTheme(), for:ViewController())
+        print("ViewController应用暗夜主题样式")
+        apply(theme: NightButtonTheme(), for: self)
+        
+    }
+    
+    func apply<T: Theme>(theme: T, for component: Component){
+        component.accept(theme: theme)
+    }
+    
+    //测试装饰器模式
+    func testDecorator(){
+        //注意galen的类型 声明变量的类型为抽象构件类型
+//        var galen:Hero = Galen()
+//        galen = RedBuffDecorator.init(hero: galen)
+//        galen.blessBuff()
+//
+//        galen = BlueBuffDecorator.init(hero: galen)
+//        galen.blessBuff()
+//
+        let image = loadImage()
+        let resizer = ResizerDecorator(image, xScale: 0.2, yScale: 0.2, hasAlpha: false)
+        
+        let blurFilter = BlurFilter(resizer)
+        blurFilter.update(redius: 2)
+        
+        let colorFilter = ColorFilter(blurFilter)
+        colorFilter.update(contrast: 0.53)
+        colorFilter.update(saturation: 0.22)
+        colorFilter.update(brightness: 0.56)
+        
+        clientCode(editor: colorFilter)
+    }
+    
+    func clientCode(editor: ImageEditor){
+        let image = editor.apply()
+        print("Client: all changes have been applied for \(image)")
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         MyNotificationCenter.singleton.removeMyObserver(observer: self, subjectName: subjectName)
     }
+    
+    func loadImage() -> UIImage {
+        let url = "https://pic2.58cdn.com.cn/images/xq_img/n_v297a33c9ce61848a284d2a525e4100368.png"
+        guard let url = URL(string: url) else {
+            fatalError("please enter a valid URL")
+        }
+        
+        guard let data = try? Data(contentsOf: url) else{
+            fatalError("Cannot load an image")
+        }
+        
+        guard let image = try? UIImage(data: data) else {
+            fatalError("Cannot create an image from data")
+        }
+        
+        return image
+    }
 
+}
+
+extension ViewController {
+    override var description: String {
+        return "ViewController"
+    }
 }
 

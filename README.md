@@ -90,7 +90,7 @@
   - UIView组织结构使用了组合模式，每个UIVIew的实例可以包含UIView的其他实例，形成统一的树形结构，让客户端对单个View对象和UIView的组合统一对待。
 视图的树形结构根部是一个UIWindow对象和它的内容视图，添加进来的UIView是子视图，同时可以拥有自己的子视图。UIView对象只能拥有一个父视图，可以又零到多个子视图。
   - 定义数据模型时，会包含数组类型的字段，数组中数据对应着另外的一个数据模型。比如负反馈模型数据，每个负反馈选项对应着负反馈标签模型，数据初始化递归初始化数组模型的数据。
-  - demo实例：给视图设置不同模式的主题。Component协议定义了UIViewController/UIView/UIButton/UILabel需要统一遵循的方法accept<T:Theme>， 同时各个视图依次实现accept方法，为相关属性应用主题样式，其中UIViewController实现accept方法时需要遍历view的子视图的accpet方法来应用主题样式。可以单独的给UIButtoen或者UILabel设置样式，也可以给UIViewController设置整体的样式。
+  - demo示例：给视图设置不同模式的主题。Component协议定义了UIViewController/UIView/UIButton/UILabel需要统一遵循的方法accept<T:Theme>， 同时各个视图依次实现accept方法，为相关属性应用主题样式，其中UIViewController实现accept方法时需要遍历view的子视图的accpet方法来应用主题样式。可以单独的给UIButtoen或者UILabel设置样式，也可以给UIViewController设置整体的样式。
   
 ### 装饰器模式
 - 主要思想：
@@ -105,7 +105,7 @@
    - 用继承来扩展对象行为的方案难以实现或者不可行(例如final)
 - 应用示例：
   - ios中的应用实例：objc的分类可以在不进行子类化的前提下方便的对已有类添加方法，不是严格的装饰器模式实现方式，是在编译时实现的。
-  - demo实例：给图片添加滤镜以及调整大小等额外功能。抽象构件ImageEditor封装对图片操作的接口。装饰基类ImageDecorator实现ImageEditor协议定义的接口apply(), BaseFilterDecorator(包括模糊滤镜BlurFilter和颜色滤镜ColorFilter)以及ResizerDecorator作为装饰子类在重写apply方法时，先调用父类的apply方法之后再添加自己的实现，对图片进行添加滤镜或者大小调整的操作。。
+  - demo示例：给图片添加滤镜以及调整大小等额外功能。抽象构件ImageEditor封装对图片操作的接口。装饰基类ImageDecorator实现ImageEditor协议定义的接口apply(), BaseFilterDecorator(包括模糊滤镜BlurFilter和颜色滤镜ColorFilter)以及ResizerDecorator作为装饰子类在重写apply方法时，先调用父类的apply方法之后再添加自己的实现，对图片进行添加滤镜或者大小调整的操作。。
  
 ### 外观模式
 - 主要思想：
@@ -119,7 +119,7 @@
    - 需要一个指向复杂子系统的直接接口，而且该接口的功能优先，可以使用外观模式
 - 应用示例：
   - ios中的应用实例：使用第三方库，使用外观模式包装在客户端代码中使用第三方API的方法。好处：（1）如果需要更改当前的图像下载方法，只需要在一个地方完成修改即可。（2）提供对一小部分功能的访问满足大多数客户的需求，可以设置常用或者默认参数
-  - demo实例：使在UIImageView的扩展中通过downloadImage方法包装第三方库SDWebImage异步加载图片的方法，downloadImageByOwn包装自定义实现的图片下载方法对外提供，满足客户端的需求，如果需要更改当前的图像下载方法，只需要在一个地方完成修改即可。
+  - demo示例：使在UIImageView的扩展中通过downloadImage方法包装第三方库SDWebImage异步加载图片的方法，downloadImageByOwn包装自定义实现的图片下载方法对外提供，满足客户端的需求，如果需要更改当前的图像下载方法，只需要在一个地方完成修改即可。
   
 
 ## 行为模式

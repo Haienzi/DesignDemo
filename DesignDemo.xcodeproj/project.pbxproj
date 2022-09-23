@@ -88,6 +88,8 @@
 		37FE96F428DC3F0700D648E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F328DC3F0700D648E7 /* Theme.swift */; };
 		37FE96F628DC463E00D648E7 /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F528DC463E00D648E7 /* ButtonTheme.swift */; };
 		37FE96FA28DC467100D648E7 /* LabelTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F928DC467100D648E7 /* LabelTheme.swift */; };
+		37FE96FD28DC844200D648E7 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96FC28DC844200D648E7 /* UIImageView+DownloadImage.swift */; };
+		37FE96FF28DC847E00D648E7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96FE28DC847E00D648E7 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,6 +187,8 @@
 		37FE96F328DC3F0700D648E7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		37FE96F528DC463E00D648E7 /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
 		37FE96F928DC467100D648E7 /* LabelTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTheme.swift; sourceTree = "<group>"; };
+		37FE96FC28DC844200D648E7 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		37FE96FE28DC847E00D648E7 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9E4B54E99B49054058D4185D /* Pods-DesignDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignDemo.debug.xcconfig"; path = "Target Support Files/Pods-DesignDemo/Pods-DesignDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FBACEEF676B92AA0FBA83E33 /* Pods-DesignDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignDemo.release.xcconfig"; path = "Target Support Files/Pods-DesignDemo/Pods-DesignDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -406,6 +410,7 @@
 				3725965F28BDFCF500CCD0A4 /* 8_Bridge */,
 				3725967928C1A3D500CCD0A4 /* 9_Composite */,
 				3743355928D33CC000A9F380 /* 10_Decorator */,
+				37FE96FB28DC785400D648E7 /* 11_Facade */,
 				37897EE5288E6DCD00D2481D /* AppDelegate.swift */,
 				37897EE7288E6DCD00D2481D /* SceneDelegate.swift */,
 				37897EE9288E6DCD00D2481D /* ViewController.swift */,
@@ -540,6 +545,15 @@
 				3725967E28C1AA4D00CCD0A4 /* Composite.swift */,
 			);
 			path = example;
+			sourceTree = "<group>";
+		};
+		37FE96FB28DC785400D648E7 /* 11_Facade */ = {
+			isa = PBXGroup;
+			children = (
+				37FE96FC28DC844200D648E7 /* UIImageView+DownloadImage.swift */,
+				37FE96FE28DC847E00D648E7 /* ImageDownloader.swift */,
+			);
+			path = 11_Facade;
 			sourceTree = "<group>";
 		};
 		E39B63C7BCC8E1C72149C330 /* Pods */ = {
@@ -723,6 +737,7 @@
 				3743356228D355F600A9F380 /* BufferDecorator.swift in Sources */,
 				3725966C28BF822B00CCD0A4 /* PayFaceMode.swift in Sources */,
 				37897F34288FD67200D2481D /* MainPageCellModel.swift in Sources */,
+				37FE96FD28DC844200D648E7 /* UIImageView+DownloadImage.swift in Sources */,
 				3725966428BF81CD00CCD0A4 /* Pay.swift in Sources */,
 				3725967B28C1A62A00CCD0A4 /* Components.swift in Sources */,
 				373E179E28ACD53000A79CAD /* SubjectProtocol.swift in Sources */,
@@ -738,6 +753,7 @@
 				3743357428DAFA9D00A9F380 /* ResizerDecorator.swift in Sources */,
 				3706966828A241270021E482 /* Boy.swift in Sources */,
 				37E1A2A42892AF4500A2C887 /* ViewAbstractFactory.swift in Sources */,
+				37FE96FF28DC847E00D648E7 /* ImageDownloader.swift in Sources */,
 				37E1A2CE2899075400A2C887 /* MyPopupView.m in Sources */,
 				3725965528B85C0700CCD0A4 /* USDAdaptee.swift in Sources */,
 				37897F30288FC2E400D2481D /* MainPageCarCell.swift in Sources */,

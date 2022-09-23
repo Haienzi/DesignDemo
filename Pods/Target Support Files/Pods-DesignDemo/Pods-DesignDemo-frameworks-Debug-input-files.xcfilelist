@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-DesignDemo/Pods-DesignDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

@@ -105,7 +105,7 @@
    - 用继承来扩展对象行为的方案难以实现或者不可行(例如final)
 - 应用示例：
   - ios中的应用实例：objc的分类可以在不进行子类化的前提下方便的对已有类添加方法，不是严格的装饰器模式实现方式，是在编译时实现的。
-  - demo示例：给图片添加滤镜以及调整大小等额外功能。抽象构件ImageEditor封装对图片操作的接口。装饰基类ImageDecorator实现ImageEditor协议定义的接口apply(), BaseFilterDecorator(包括模糊滤镜BlurFilter和颜色滤镜ColorFilter)以及ResizerDecorator作为装饰子类在重写apply方法时，先调用父类的apply方法之后再添加自己的实现，对图片进行添加滤镜或者大小调整的操作。。
+  - demo示例：给图片添加滤镜以及调整大小等额外功能。抽象构件ImageEditor封装对图片操作的接口。装饰基类ImageDecorator实现ImageEditor协议定义的接口apply(), BaseFilterDecorator(包括模糊滤镜BlurFilter和颜色滤镜ColorFilter)以及ResizerDecorator作为装饰子类在重写apply方法时，先调用父类的apply方法之后再添加自己的实现，对图片进行添加滤镜或者大小调整的操作。
  
 ### 外观模式
 - 主要思想：

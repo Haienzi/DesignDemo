@@ -68,11 +68,13 @@ class ViewController: UIViewController {
         MyNotificationCenter.singleton.addMyObserver(aObserver: self, aSelector: #selector(testProperty), notificationName:notificationTest , subjectName: subjectName)
         NotificationCenter.default.addObserver(self, selector: #selector(testProperty), name: NSNotification.Name.init(rawValue: notificationObserver), object: nil)
         //测试桥接模式
-        testBridge()
+        //testBridge()
         //测试组合模式
-        testCompositeReal()
+        //testCompositeReal()
         //测试装饰器模式
         //testDecorator()
+        //测试责任链模式
+        testChainOfResponsibilityRealWorld()
     
     }
     
@@ -186,6 +188,18 @@ class ViewController: UIViewController {
     func clientCode(editor: ImageEditor){
         let image = editor.apply()
         print("Client: all changes have been applied for \(image)")
+    }
+    
+    //测试责任链模式
+    func testChainOfResponsibilityRealWorld() {
+        print("测试责任链模式")
+        let signUpHandler = SignUpHandler(with: LocationHandler(with: NotificationHandler()))
+        let signUpController = SignUpViewController(handler: signUpHandler)
+        signUpController.signUpButtonSelected()
+        
+        let loginHandler = LoginHandler(with: LocationHandler())
+        let loginController = LoginViewController(handler: loginHandler)
+        loginController.loginButtonSelected()
     }
     
     override func viewDidDisappear(_ animated: Bool) {

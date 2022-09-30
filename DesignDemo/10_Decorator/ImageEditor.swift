@@ -9,7 +9,7 @@
 
 import Foundation
 
-//封装公用对图片操作的接口
+//封装对图片操作的公用接口
 protocol ImageEditor: CustomStringConvertible {
     func apply() -> UIImage
 }

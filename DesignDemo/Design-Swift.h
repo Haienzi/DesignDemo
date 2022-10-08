@@ -12,5 +12,8 @@
 #import "MyPopupView.h"
 #import "PopupViewBuilder.h"
 #import "UIView+PopupViewMaker.h"
+#import "ProductList.h"
+#import "AbstractIterator.h"
+
 
 #endif /* Design_Swift_h */

@@ -7,7 +7,8 @@
 
 import Foundation
 
-// Operation协议：
+// Operation协议：https://juejin.cn/post/6844904109737246728
+// 命令Command
 class DelayedOperation: Operation {
     private var delay: TimeInterval
     private var _executing: Bool = false
@@ -53,6 +54,11 @@ class DelayedOperation: Operation {
             self.isFinished = true
             return
         }
+        
+        self.isExecuting = true
+        self.main()
+        self.isExecuting = false
+        self.isFinished = true
     }
     
 }

@@ -74,7 +74,9 @@ class ViewController: UIViewController {
         //测试装饰器模式
         //testDecorator()
         //测试责任链模式
-        testChainOfResponsibilityRealWorld()
+//        testChainOfResponsibilityRealWorld()
+        //测试备忘录模式
+        testMemento()
     
     }
     
@@ -146,9 +148,9 @@ class ViewController: UIViewController {
     //组合模式真实应用场景
     func testCompositeReal(){
         print("UIButton应用默认主题样式")
-        apply(theme: DefaultButtonTheme(), for:self.button)
+        apply(theme: DefaultButtonTheme(), for:self.button as! Component)
         print("UIButton应用暗夜主题样式")
-        apply(theme: NightButtonTheme(), for: UIButton())
+        apply(theme: NightButtonTheme(), for: UIButton() as! Component)
         
         print("ViewController应用默认主题样式")
         apply(theme: DefaultButtonTheme(), for:ViewController())
@@ -172,7 +174,7 @@ class ViewController: UIViewController {
 //        galen.blessBuff()
 //
         let image = loadImage()
-        let resizer = ResizerDecorator(image, xScale: 0.2, yScale: 0.2, hasAlpha: false)
+        let resizer = ResizerDecorator(image as! ImageEditor, xScale: 0.2, yScale: 0.2, hasAlpha: false)
         
         let blurFilter = BlurFilter(resizer)
         blurFilter.update(redius: 2)
@@ -200,6 +202,73 @@ class ViewController: UIViewController {
         let loginHandler = LoginHandler(with: LocationHandler())
         let loginController = LoginViewController(handler: loginHandler)
         loginController.loginButtonSelected()
+    }
+    
+    //测试命令模式
+    func testCommandRealWorld(){
+        let siri = SiriShortcuts.shared
+        
+        siri.perform(.leaveHome)
+        siri.perform(.leaveWork, delay: 5)
+        siri.cancel(action: .leaveWork)
+    }
+    
+    //测试迭代器模式
+    func testIterator(){
+        let products = ProductList()
+        products.add("迭代器模式")
+        products.add("开始测试")
+        products.add("demo写完了吗")
+        let iterator = products.createIterator()
+        while(!iterator.hasLast()){
+            print(iterator.getCurrentItem())
+            iterator.next()
+        }
+        
+    }
+    
+    //测试中介者模式
+    func testMediator(){
+        let newsArray = [News(id: 1, title: "News1", likesCount: 1),
+                                 News(id: 2, title: "News2", likesCount: 2)]
+
+        //累加
+        let numberOfGivenLikes = newsArray.reduce(0, { $0 + $1.likesCount })
+
+        let mediator = ScreenMediator()
+
+        let feedVC = NewsFeedViewController(mediator, newsArray)
+        let newsDetailVC = NewsDetailViewController(mediator, newsArray.first!)
+        let profileVC = ProfileViewController(mediator, numberOfGivenLikes)
+
+        mediator.update([feedVC, newsDetailVC, profileVC])
+
+        feedVC.userLikedAllNews()
+        feedVC.userDislikedAllNews()
+    }
+    
+    //测试备忘录模式
+    func testMemento(){
+        let textView = UITextView()
+        let undoStack = UndoStack(textView)
+        
+        textView.text = "First Change"
+        undoStack.save()
+        
+        textView.text = "Test Memento"
+        undoStack.save()
+        
+        textView.text = textView.text + " & TextView Third Change"
+        textView.textColor = .purple
+        undoStack.save()
+        
+        print(undoStack)
+        print("Client: Perform undo operation 2 times\n")
+        undoStack.undo()
+        undoStack.undo()
+        
+        print(undoStack)
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -230,4 +299,3 @@ extension ViewController {
         return "ViewController"
     }
 }
-

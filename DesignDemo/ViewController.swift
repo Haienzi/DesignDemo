@@ -271,6 +271,30 @@ class ViewController: UIViewController {
         
     }
     
+    func testStrategy(){
+        let controller = ListController()
+        
+        let memoryStorage = MemonryStorage()
+        memoryStorage.add(items: usersFromNetwork())
+
+        clientCode(use: controller, with: memoryStorage)
+        clientCode(use: controller, with: CoreDataStorage())
+        clientCode(use: controller, with: RealmStorage())
+    }
+    
+    func clientCode(use controller: ListController, with dataSource: DataSource) {
+        controller.update(dataSource: dataSource)
+        controller.displayModels()
+    }
+
+    private func usersFromNetwork() -> [StrategyUser] {
+        let user1 = StrategyUser(id: 1, userName: "testMemoryStorage")
+        let user2 = StrategyUser(id: 2, userName: "testCoreDataStorage")
+        let user3 = StrategyUser(id: 3, userName: "testRealmStorage")
+        
+        return [user1, user2, user3]
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         MyNotificationCenter.singleton.removeMyObserver(observer: self, subjectName: subjectName)
     }

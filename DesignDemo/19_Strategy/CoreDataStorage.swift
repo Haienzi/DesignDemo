@@ -8,6 +8,7 @@
 import Foundation
 
 class CoreDataStorage: DataSource {
+    
     func loadModles<T>() -> [T] where T : DomaindModel {
         guard T.self == User.self else { return [] }
 

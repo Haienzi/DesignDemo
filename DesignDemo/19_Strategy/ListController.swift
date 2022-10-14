@@ -20,7 +20,7 @@ class ListController {
         guard let dataSource = dataSource else { return }
         let models = dataSource.loadModles() as [StrategyUser]
 
-        print("\nListController: Displaying models...")
-        models.forEach({ print($0) })
+        print("\n ListController: Displaying models...")
+        models.forEach{ print($0) }
     }
 }

@@ -3,7 +3,7 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/7.
-//
+//  新闻详情页组件对象
 
 import Foundation
 

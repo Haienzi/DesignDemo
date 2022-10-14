@@ -3,7 +3,7 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/8.
-//  原发器
+//  原发器：记录当前时刻的内部状态，提供创建和恢复备忘录的功能，也可以实现其他业务功能，可以访问备忘录里的所有信息
 
 import Foundation
 import UIKit

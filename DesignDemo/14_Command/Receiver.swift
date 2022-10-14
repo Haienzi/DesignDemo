@@ -3,7 +3,7 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/6.
-//
+//  请求接收者，负责根据参数执行和取消具体的命令
 
 import Foundation
 

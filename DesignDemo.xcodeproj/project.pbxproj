@@ -119,10 +119,6 @@
 		37E1A2D12899084E00A2C887 /* PopupViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1A2D02899084E00A2C887 /* PopupViewBuilder.m */; };
 		37EB934428F3FC750040872A /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB934328F3FC750040872A /* CanvasView.swift */; };
 		37EB934628F400D20040872A /* VisitorTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB934528F400D20040872A /* VisitorTestViewController.swift */; };
-		37EB934828F40BA80040872A /* PermissionAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB934728F40BA80040872A /* PermissionAccessor.swift */; };
-		37EB934A28F40BEF0040872A /* CameraAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB934928F40BEF0040872A /* CameraAccessor.swift */; };
-		37EB934C28F40C040040872A /* MicroPhoneAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB934B28F40C040040872A /* MicroPhoneAccessor.swift */; };
-		37EB934E28F40C1C0040872A /* PhotoLibraryAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB934D28F40C1C0040872A /* PhotoLibraryAccessor.swift */; };
 		37FE96F228DC38AF00D648E7 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F128DC38AF00D648E7 /* Component.swift */; };
 		37FE96F428DC3F0700D648E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F328DC3F0700D648E7 /* Theme.swift */; };
 		37FE96F628DC463E00D648E7 /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE96F528DC463E00D648E7 /* ButtonTheme.swift */; };
@@ -278,10 +274,6 @@
 		37E1A2D02899084E00A2C887 /* PopupViewBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopupViewBuilder.m; sourceTree = "<group>"; };
 		37EB934328F3FC750040872A /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		37EB934528F400D20040872A /* VisitorTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTestViewController.swift; sourceTree = "<group>"; };
-		37EB934728F40BA80040872A /* PermissionAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionAccessor.swift; sourceTree = "<group>"; };
-		37EB934928F40BEF0040872A /* CameraAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessor.swift; sourceTree = "<group>"; };
-		37EB934B28F40C040040872A /* MicroPhoneAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroPhoneAccessor.swift; sourceTree = "<group>"; };
-		37EB934D28F40C1C0040872A /* PhotoLibraryAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAccessor.swift; sourceTree = "<group>"; };
 		37FE96F128DC38AF00D648E7 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		37FE96F328DC3F0700D648E7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		37FE96F528DC463E00D648E7 /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
@@ -353,11 +345,11 @@
 		371B32C528EEC42700E6DD67 /* example */ = {
 			isa = PBXGroup;
 			children = (
+				37FE971C28E5B8B700D648E7 /* DelayOperation.swift */,
 				37FE972028E5B8E700D648E7 /* DoorOperation.swift */,
 				37FE971E28E5B8D600D648E7 /* WindowOperation.swift */,
-				37FE972428E5B95A00D648E7 /* SiriShortcuts.swift */,
 				37FE972228E5B8FF00D648E7 /* TaxiOperation.swift */,
-				37FE971C28E5B8B700D648E7 /* DelayOperation.swift */,
+				37FE972428E5B95A00D648E7 /* SiriShortcuts.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -391,9 +383,9 @@
 		371B32D528F02B5B00E6DD67 /* 17_Memento */ = {
 			isa = PBXGroup;
 			children = (
+				371B32F428F1228600E6DD67 /* Memento.swift */,
 				371B32F028F1226200E6DD67 /* UITextView+Memento.swift */,
 				371B32F228F1227600E6DD67 /* UndoStack.swift */,
-				371B32F428F1228600E6DD67 /* Memento.swift */,
 			);
 			path = 17_Memento;
 			sourceTree = "<group>";
@@ -426,10 +418,6 @@
 		371B32D828F02BE000E6DD67 /* 20_Template */ = {
 			isa = PBXGroup;
 			children = (
-				37EB934728F40BA80040872A /* PermissionAccessor.swift */,
-				37EB934928F40BEF0040872A /* CameraAccessor.swift */,
-				37EB934B28F40C040040872A /* MicroPhoneAccessor.swift */,
-				37EB934D28F40C1C0040872A /* PhotoLibraryAccessor.swift */,
 			);
 			path = 20_Template;
 			sourceTree = "<group>";
@@ -827,10 +815,10 @@
 			isa = PBXGroup;
 			children = (
 				371B32C528EEC42700E6DD67 /* example */,
-				371B32C928EEC48900E6DD67 /* Receiver.swift */,
 				371B32CB28EECAB300E6DD67 /* CommandProtocol.swift */,
 				371B32CD28EEFBA300E6DD67 /* EnlargeCommand.swift */,
 				371B32CF28EEFBB600E6DD67 /* ReduceCommand.swift */,
+				371B32C928EEC48900E6DD67 /* Receiver.swift */,
 				371B32D128EF086300E6DD67 /* MyInvoker.swift */,
 			);
 			path = 14_Command;
@@ -987,7 +975,6 @@
 				3710C401289CCA67005520CE /* SingletonTest.m in Sources */,
 				37E1A2AC2892AFC800A2C887 /* MiddleViewProtocol.swift in Sources */,
 				3725966A28BF821D00CCD0A4 /* PayCypher.swift in Sources */,
-				37EB934A28F40BEF0040872A /* CameraAccessor.swift in Sources */,
 				37FE971928E583EF00D648E7 /* LoginViewController.swift in Sources */,
 				373E17B228AE173900A79CAD /* TestView.m in Sources */,
 				373E179A28ACC11200A79CAD /* AViewController.swift in Sources */,
@@ -1014,7 +1001,6 @@
 				3743356A28DAC3B900A9F380 /* ImageDecorator.swift in Sources */,
 				371B332428F2F60600E6DD67 /* Vertex.swift in Sources */,
 				3725967F28C1AA4D00CCD0A4 /* Composite.swift in Sources */,
-				37EB934E28F40C1C0040872A /* PhotoLibraryAccessor.swift in Sources */,
 				371B32F928F17DD900E6DD67 /* NormalMemberState.swift in Sources */,
 				37E1A2D12899084E00A2C887 /* PopupViewBuilder.m in Sources */,
 				37FE96F228DC38AF00D648E7 /* Component.swift in Sources */,
@@ -1038,7 +1024,6 @@
 				37FE972528E5B95A00D648E7 /* SiriShortcuts.swift in Sources */,
 				37FE970B28E4688C00D648E7 /* LoginHandler.swift in Sources */,
 				3710C3FD289BC11D005520CE /* TestBuilderViewController.m in Sources */,
-				37EB934828F40BA80040872A /* PermissionAccessor.swift in Sources */,
 				373E17AF28AE153000A79CAD /* ATestViewController.m in Sources */,
 				37897F2E288FC2C200D2481D /* MainPageJobCell.swift in Sources */,
 				3725966628BF81E200CCD0A4 /* WxPay.swift in Sources */,
@@ -1064,7 +1049,6 @@
 				3725967B28C1A62A00CCD0A4 /* Components.swift in Sources */,
 				371B32FB28F17DEB00E6DD67 /* GoldMemberState.swift in Sources */,
 				373E179E28ACD53000A79CAD /* SubjectProtocol.swift in Sources */,
-				37EB934C28F40C040040872A /* MicroPhoneAccessor.swift in Sources */,
 				37E1A2AA2892AFB200A2C887 /* TopViewProtocol.swift in Sources */,
 				373E17AC28AD1AA000A79CAD /* DelegateManager.m in Sources */,
 				37FE971F28E5B8D600D648E7 /* WindowOperation.swift in Sources */,

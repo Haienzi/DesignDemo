@@ -76,7 +76,9 @@ class ViewController: UIViewController {
         //测试责任链模式
 //        testChainOfResponsibilityRealWorld()
         //测试备忘录模式
-        testMemento()
+        //testMemento()
+        
+        testMediator()
     
     }
     
@@ -229,20 +231,16 @@ class ViewController: UIViewController {
     
     //测试中介者模式
     func testMediator(){
-        let newsArray = [News(id: 1, title: "News1", likesCount: 1),
-                                 News(id: 2, title: "News2", likesCount: 2)]
-
+        let newsArray = [News(id: 1, title: "惊天动地大新闻1", likesCount: 1),
+                         News(id: 2, title: "惊天动地大新闻2", likesCount: 2),
+                         News(id: 2, title: "惊天动地大新闻3", likesCount: 3)]
         //累加
         let numberOfGivenLikes = newsArray.reduce(0, { $0 + $1.likesCount })
-
         let mediator = ScreenMediator()
-
         let feedVC = NewsFeedViewController(mediator, newsArray)
         let newsDetailVC = NewsDetailViewController(mediator, newsArray.first!)
         let profileVC = ProfileViewController(mediator, numberOfGivenLikes)
-
         mediator.update([feedVC, newsDetailVC, profileVC])
-
         feedVC.userLikedAllNews()
         feedVC.userDislikedAllNews()
     }
@@ -268,7 +266,6 @@ class ViewController: UIViewController {
         undoStack.undo()
         
         print(undoStack)
-        
     }
     
     func testStrategy(){

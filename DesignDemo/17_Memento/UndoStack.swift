@@ -3,7 +3,7 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/8.
-//  Caretaker 负责人
+//  Caretaker 负责人，管理备忘录，提供保存和获取备忘录的功能，但是不能对备忘录的内容进行访问和修改
 
 import Foundation
 

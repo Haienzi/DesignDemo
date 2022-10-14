@@ -7,12 +7,14 @@
 
 import Foundation
 
+//抽象中介者，定义各个组件需要交互的方法
 protocol ScreenUpdatable: AnyObject {
     func likeAdded(to news: News)
     
     func likeRemoved(from news: News)
 }
 
+//具体中介者，维护各个同事对象，负责具体的协调各同事对象的交互关系
 class ScreenMediator: ScreenUpdatable {
 
     private var screens: [ScreenUpdatable]?

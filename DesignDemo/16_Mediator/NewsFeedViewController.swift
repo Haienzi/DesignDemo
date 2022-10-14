@@ -3,8 +3,8 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/7.
-//
-
+//  新闻列表组件对象，新闻列表，点赞和取消点赞行为会对所有列表对象进行修改
+//  实现自己的业务，通过持有的中介者对象与其他同事组件通信
 import Foundation
 
 class NewsFeedViewController: ScreenUpdatable {
@@ -18,9 +18,8 @@ class NewsFeedViewController: ScreenUpdatable {
     }
 
     func likeAdded(to news: News) {
-
         print("News Feed: Received a liked news model with id \(news.id)")
-
+        // for var item 对item相关属性进行修改
         for var item in newsArray {
             if item == news {
                 item.likesCount += 1
@@ -29,9 +28,7 @@ class NewsFeedViewController: ScreenUpdatable {
     }
 
     func likeRemoved(from news: News) {
-
         print("News Feed: Received a disliked news model with id \(news.id)")
-
         for var item in newsArray {
             if item == news {
                 item.likesCount -= 1
@@ -40,13 +37,13 @@ class NewsFeedViewController: ScreenUpdatable {
     }
 
     func userLikedAllNews() {
-        print("\n\nNews Feed: User LIKED all news models")
+        print("News Feed: User LIKED all news models")
         print("News Feed: I am telling to mediator about it...\n")
         newsArray.forEach({ mediator?.likeAdded(to: $0) })
     }
 
     func userDislikedAllNews() {
-        print("\n\nNews Feed: User DISLIKED all news models")
+        print("News Feed: User DISLIKED all news models")
         print("News Feed: I am telling to mediator about it...\n")
         newsArray.forEach({ mediator?.likeRemoved(from: $0) })
     }

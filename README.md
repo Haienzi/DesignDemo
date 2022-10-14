@@ -152,8 +152,6 @@
   - demo示例：Handler协议声明了处理者统一需要遵循的处理请求方法，next表示下一个处理者对象。当受到注册请求时，会形成LocationHandler->NotificationHandler->SignUpHandler的处理者链，将请求依次转发相应的处理者处理，满足条件的情况下成功注册信息。当收到登录请求时，会形成LocationHandler->LoginHandler的处理者链，将请求转发，地理位置允许的情况下传递给LoginHandler处理登录信息。
 
 ### 命令模式
-[{"src":"xap:resources/6df420a1202f136cc2405bcb536b42f0cbb6b4a44ac9708c5b2b44df2efe313d.png"}]![image](https://user-images.githubusercontent.com/26780520/195800059-9a40dad4-5fd2-4fbf-af81-a4575f1a898f.png)
-
 - 主要思想：
   - 将方法调用封装为对象的设计模式，对请求进行封装，一个请求对应一个命令，将请求发送者与接受者解耦。
   - 将请求转换成一个包含与请求相关的所有信息的独立对象。该转换能让根据不同的请求将方法参数化、延迟请求执行或将其放图队列中，实现可撤销操作
@@ -175,6 +173,8 @@
 - 应用示例：
   - ios中的应用实例：Target-Action按钮添加点击事件，NSInvocation:封装了向接受者转发消息所需的必要信息，接收消息的对象target，方法选择器selector和方法参数方法签名，实际调用时只需要获取NSInvocation对象，调用invoke方法即可执行方法；
   - demo示例：CommandProtocol类作为抽象命令类，定义了执行和取消命令的通用接口。EnlargeCommand和ReduceCommand作为具体命令，持有Receiver对象,来间接的实现放大和缩小的操作。Receiver作为请求真正的命令执行者，负责根据参数执行具体的命令，实现放大和缩小的操作。可以通过MyInvoker来调用和取消命令。
+ 
+[{"src":"xap:resources/6df420a1202f136cc2405bcb536b42f0cbb6b4a44ac9708c5b2b44df2efe313d.png"}]![image](https://user-images.githubusercontent.com/26780520/195800059-9a40dad4-5fd2-4fbf-af81-a4575f1a898f.png)
  
 ### 迭代器模式
 - 主要思想：

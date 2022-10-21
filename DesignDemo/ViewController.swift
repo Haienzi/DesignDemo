@@ -77,8 +77,10 @@ class ViewController: UIViewController {
 //        testChainOfResponsibilityRealWorld()
         //测试备忘录模式
         //testMemento()
-        
-        testMediator()
+        //测试中间件模式
+        //testMediator()
+        //测试策略模式
+        testStrategy()
     
     }
     
@@ -268,6 +270,7 @@ class ViewController: UIViewController {
         print(undoStack)
     }
     
+    //测试策略模式
     func testStrategy(){
         let controller = ListController()
         
@@ -277,6 +280,18 @@ class ViewController: UIViewController {
         clientCode(use: controller, with: memoryStorage)
         clientCode(use: controller, with: CoreDataStorage())
         clientCode(use: controller, with: RealmStorage())
+    }
+    
+    
+    //测试模版方法模式
+    func testTemplate(){
+        let accessors = [CameraAccessor(), MicrophoneAccessor(), PhotoLibraryAccesor()];
+        accessors.forEach { item in
+            item.requestAccessIfNeeded { status in
+                let message = status ? "You have access to": "You Don't have access to "
+                print(message + item.description + "\n")
+            }
+        }
     }
     
     func clientCode(use controller: ListController, with dataSource: DataSource) {

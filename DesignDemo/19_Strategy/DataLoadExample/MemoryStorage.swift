@@ -3,7 +3,7 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/8.
-//
+//  具体读取方式1 Memory
 
 import Foundation
 
@@ -13,7 +13,9 @@ class MemonryStorage: DataSource {
     
     func loadModles<T>() -> [T] where T: DomaindModel {
         guard T.self == StrategyUser.self else
-        { return []}
+        {
+            return []
+        }
         
         return items as! [T]
     }

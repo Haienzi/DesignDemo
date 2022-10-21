@@ -3,7 +3,7 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/8.
-//
+//  具体状态类
 
 import Foundation
 

@@ -3,12 +3,14 @@
 //  DesignDemo
 //
 //  Created by mqh on 2022/10/8.
-//
+//  拥有多种状态的对象
 
 import Foundation
 
 class User {
     var money: Double = 0
+    
+    //获取状态
     var state: MemberState {
         get{
             if money < 100 {
@@ -29,6 +31,7 @@ class User {
     
     //调用状态对应的业务方法
     func doSomething(){
+        //功能判断不需要再使用复杂的if-else来判断状态在调用方法
         state.handle()
     }
     

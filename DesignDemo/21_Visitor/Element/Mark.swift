@@ -2,7 +2,6 @@
 //  Mark.swift
 //  DesignDemo
 //
-//  Created by mqh on 2022/10/9.
 //  抽象元素，定义接受访问者的方法
 
 import Foundation

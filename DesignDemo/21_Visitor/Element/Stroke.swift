@@ -2,7 +2,6 @@
 //  Stroke.swift
 //  DesignDemo
 //
-//  Created by mqh on 2022/10/9.
 //  线条（元素集合），包含了若干的Vertex子节点
 
 import Foundation

@@ -2,7 +2,6 @@
 //  Dot.swift
 //  DesignDemo
 //
-//  Created by mqh on 2022/10/9.
 //  具体元素：孤立的圆点不具有添加和删除子节点的功能。
 
 import Foundation

@@ -59,7 +59,7 @@
 		372D062429001B2600AF07F5 /* CameraAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D062329001B2600AF07F5 /* CameraAccessor.swift */; };
 		372D062629001B3E00AF07F5 /* MicrophoneAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D062529001B3E00AF07F5 /* MicrophoneAccessor.swift */; };
 		372D062829001B5200AF07F5 /* PhotoLibraryAccesor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D062729001B5200AF07F5 /* PhotoLibraryAccesor.swift */; };
-		372D062B2901282400AF07F5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D062A2901282300AF07F5 /* Person.swift */; };
+		372D062B2901282400AF07F5 /* Person1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D062A2901282300AF07F5 /* Person1.swift */; };
 		373E179A28ACC11200A79CAD /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E179928ACC11200A79CAD /* AViewController.swift */; };
 		373E179C28ACC1D000A79CAD /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E179B28ACC1D000A79CAD /* TableViewDelegate.swift */; };
 		373E179E28ACD53000A79CAD /* SubjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373E179D28ACD53000A79CAD /* SubjectProtocol.swift */; };
@@ -82,6 +82,14 @@
 		3743357428DAFA9D00A9F380 /* ResizerDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743357328DAFA9D00A9F380 /* ResizerDecorator.swift */; };
 		3743357628DAFBF300A9F380 /* BlurFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743357528DAFBF300A9F380 /* BlurFilter.swift */; };
 		3743357828DAFC0C00A9F380 /* ColorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743357728DAFC0C00A9F380 /* ColorFilter.swift */; };
+		37594AC529125C96005A0373 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594ABB29125C95005A0373 /* CanvasView.swift */; };
+		37594AC629125C96005A0373 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594ABD29125C95005A0373 /* Mark.swift */; };
+		37594AC729125C96005A0373 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594ABE29125C95005A0373 /* Dot.swift */; };
+		37594AC829125C96005A0373 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594ABF29125C95005A0373 /* Stroke.swift */; };
+		37594AC929125C96005A0373 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594AC029125C95005A0373 /* Vertex.swift */; };
+		37594ACA29125C96005A0373 /* MarkRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594AC229125C95005A0373 /* MarkRender.swift */; };
+		37594ACB29125C96005A0373 /* MarkVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594AC329125C95005A0373 /* MarkVisitor.swift */; };
+		37594ACC29125C96005A0373 /* VisitorTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37594AC429125C95005A0373 /* VisitorTestViewController.swift */; };
 		376EC26C28A35B0C004972CD /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376EC26B28A35B0C004972CD /* Observer.swift */; };
 		376EC26E28A35B25004972CD /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376EC26D28A35B25004972CD /* Subject.swift */; };
 		376EC27028A35B34004972CD /* ObserverA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376EC26F28A35B34004972CD /* ObserverA.swift */; };
@@ -202,7 +210,7 @@
 		372D062329001B2600AF07F5 /* CameraAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessor.swift; sourceTree = "<group>"; };
 		372D062529001B3E00AF07F5 /* MicrophoneAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneAccessor.swift; sourceTree = "<group>"; };
 		372D062729001B5200AF07F5 /* PhotoLibraryAccesor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAccesor.swift; sourceTree = "<group>"; };
-		372D062A2901282300AF07F5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		372D062A2901282300AF07F5 /* Person1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person1.swift; sourceTree = "<group>"; };
 		373E179928ACC11200A79CAD /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		373E179B28ACC1D000A79CAD /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		373E179D28ACD53000A79CAD /* SubjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectProtocol.swift; sourceTree = "<group>"; };
@@ -229,6 +237,14 @@
 		3743357328DAFA9D00A9F380 /* ResizerDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizerDecorator.swift; sourceTree = "<group>"; };
 		3743357528DAFBF300A9F380 /* BlurFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurFilter.swift; sourceTree = "<group>"; };
 		3743357728DAFC0C00A9F380 /* ColorFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFilter.swift; sourceTree = "<group>"; };
+		37594ABB29125C95005A0373 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		37594ABD29125C95005A0373 /* Mark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		37594ABE29125C95005A0373 /* Dot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
+		37594ABF29125C95005A0373 /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		37594AC029125C95005A0373 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		37594AC229125C95005A0373 /* MarkRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkRender.swift; sourceTree = "<group>"; };
+		37594AC329125C95005A0373 /* MarkVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkVisitor.swift; sourceTree = "<group>"; };
+		37594AC429125C95005A0373 /* VisitorTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorTestViewController.swift; sourceTree = "<group>"; };
 		376EC26B28A35B0C004972CD /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		376EC26D28A35B25004972CD /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		376EC26F28A35B34004972CD /* ObserverA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverA.swift; sourceTree = "<group>"; };
@@ -480,7 +496,7 @@
 		372D06292901273C00AF07F5 /* example */ = {
 			isa = PBXGroup;
 			children = (
-				372D062A2901282300AF07F5 /* Person.swift */,
+				372D062A2901282300AF07F5 /* Person1.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -561,6 +577,37 @@
 			path = example;
 			sourceTree = "<group>";
 		};
+		37594ABA29125C95005A0373 /* 21_Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				37594ABB29125C95005A0373 /* CanvasView.swift */,
+				37594ABC29125C95005A0373 /* Element */,
+				37594AC129125C95005A0373 /* Visitor */,
+				37594AC429125C95005A0373 /* VisitorTestViewController.swift */,
+			);
+			path = 21_Visitor;
+			sourceTree = "<group>";
+		};
+		37594ABC29125C95005A0373 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				37594ABD29125C95005A0373 /* Mark.swift */,
+				37594ABE29125C95005A0373 /* Dot.swift */,
+				37594AC029125C95005A0373 /* Vertex.swift */,
+				37594ABF29125C95005A0373 /* Stroke.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		37594AC129125C95005A0373 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				37594AC329125C95005A0373 /* MarkVisitor.swift */,
+				37594AC229125C95005A0373 /* MarkRender.swift */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 		376EC27328A38682004972CD /* example */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +670,7 @@
 				371B32D628F02B6F00E6DD67 /* 18_State */,
 				371B32D728F02B8700E6DD67 /* 19_Strategy */,
 				371B32D828F02BE000E6DD67 /* 20_Template */,
+				37594ABA29125C95005A0373 /* 21_Visitor */,
 				37897EE7288E6DCD00D2481D /* SceneDelegate.swift */,
 				37897EE5288E6DCD00D2481D /* AppDelegate.swift */,
 				37897EE9288E6DCD00D2481D /* ViewController.swift */,
@@ -933,6 +981,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				371B32D228EF086300E6DD67 /* MyInvoker.swift in Sources */,
+				37594ACC29125C96005A0373 /* VisitorTestViewController.swift in Sources */,
 				372D062829001B5200AF07F5 /* PhotoLibraryAccesor.swift in Sources */,
 				373E179C28ACC1D000A79CAD /* TableViewDelegate.swift in Sources */,
 				37FE971328E541F200D648E7 /* NotificationHandler.swift in Sources */,
@@ -940,12 +989,14 @@
 				3706966628A241180021E482 /* Girl.swift in Sources */,
 				376EC27528A3ABC5004972CD /* MyNotification.swift in Sources */,
 				3743356828DAC15D00A9F380 /* ImageEditor.swift in Sources */,
+				37594AC529125C96005A0373 /* CanvasView.swift in Sources */,
 				371B32CC28EECAB300E6DD67 /* CommandProtocol.swift in Sources */,
+				37594ACB29125C96005A0373 /* MarkVisitor.swift in Sources */,
 				3743356C28DAE57000A9F380 /* UIImage+ImageEditor.swift in Sources */,
 				3743355C28D352B200A9F380 /* Hero.swift in Sources */,
 				376EC27028A35B34004972CD /* ObserverA.swift in Sources */,
 				376EC26C28A35B0C004972CD /* Observer.swift in Sources */,
-				372D062B2901282400AF07F5 /* Person.swift in Sources */,
+				372D062B2901282400AF07F5 /* Person1.swift in Sources */,
 				37E1A2B72892C05100A2C887 /* MiddleWalletView.swift in Sources */,
 				3706966128A0EA040021E482 /* UIView+PopupViewMaker.m in Sources */,
 				37897F37288FEA4800D2481D /* String+Class.swift in Sources */,
@@ -955,6 +1006,7 @@
 				371B32CE28EEFBA300E6DD67 /* EnlargeCommand.swift in Sources */,
 				37FE96F428DC3F0700D648E7 /* Theme.swift in Sources */,
 				371B32E728F05ED400E6DD67 /* News.swift in Sources */,
+				37594AC629125C96005A0373 /* Mark.swift in Sources */,
 				371B32D028EEFBB600E6DD67 /* ReduceCommand.swift in Sources */,
 				3710C401289CCA67005520CE /* SingletonTest.m in Sources */,
 				37E1A2AC2892AFC800A2C887 /* MiddleViewProtocol.swift in Sources */,
@@ -991,6 +1043,7 @@
 				371B32E928F05F4500E6DD67 /* ScreenMediator.swift in Sources */,
 				37897F26288E86AE00D2481D /* CellSingleton.swift in Sources */,
 				37897F2C288FBD5D00D2481D /* MainPageCell.swift in Sources */,
+				37594AC929125C96005A0373 /* Vertex.swift in Sources */,
 				37897F20288E79B600D2481D /* MainPageCellFactory.swift in Sources */,
 				37FE970928E4686600D648E7 /* Handler.swift in Sources */,
 				37FE972328E5B8FF00D648E7 /* TaxiOperation.swift in Sources */,
@@ -1019,6 +1072,7 @@
 				37FE970F28E468B500D648E7 /* SignUpHandler.swift in Sources */,
 				3706966428A240F50021E482 /* Person.swift in Sources */,
 				3743356228D355F600A9F380 /* BufferDecorator.swift in Sources */,
+				37594AC729125C96005A0373 /* Dot.swift in Sources */,
 				3725966C28BF822B00CCD0A4 /* PayFaceMode.swift in Sources */,
 				371B330528F19E1600E6DD67 /* MemoryStorage.swift in Sources */,
 				37897F34288FD67200D2481D /* MainPageCellModel.swift in Sources */,
@@ -1030,8 +1084,10 @@
 				3725967B28C1A62A00CCD0A4 /* Components.swift in Sources */,
 				371B32FB28F17DEB00E6DD67 /* GoldMemberState.swift in Sources */,
 				373E179E28ACD53000A79CAD /* SubjectProtocol.swift in Sources */,
+				37594ACA29125C96005A0373 /* MarkRender.swift in Sources */,
 				37E1A2AA2892AFB200A2C887 /* TopViewProtocol.swift in Sources */,
 				373E17AC28AD1AA000A79CAD /* DelegateManager.m in Sources */,
+				37594AC829125C96005A0373 /* Stroke.swift in Sources */,
 				37FE971F28E5B8D600D648E7 /* WindowOperation.swift in Sources */,
 				371B330728F19E2800E6DD67 /* CoreDataStorage.swift in Sources */,
 				37897F32288FD4A600D2481D /* MainPageHouseCell.swift in Sources */,
